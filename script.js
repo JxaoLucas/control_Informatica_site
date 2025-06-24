@@ -88,16 +88,3 @@ function ReiniciarCarrossel() {
   PausarCarrossel();      
   IniciarCarrossel();     
 }
-
-window.addEventListener('scroll', function() {
-    const servicosSection = document.getElementById('servicos');
-    const articles = servicosSection.getElementsByTagName('article');
-    const sectionTop = servicosSection.getBoundingClientRect().top;
-
-    if (sectionTop < window.innerHeight && sectionTop > 0) {
-        Array.from(articles).forEach((article, index) => {
-            article.style.animationDelay = `${index * 0.3}s`;
-            article.classList.add('animated');
-        });
-    }
-});

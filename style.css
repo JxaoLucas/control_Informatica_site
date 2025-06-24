@@ -674,24 +674,24 @@ nav ul li:hover{
 
 @media screen and (max-width:507px) {
     h1{
-        font-size: 45px;
-        margin-bottom: 45px;  
+        font-size: 32px;
+        margin-bottom: 15px;  
     }
     
     nav ul{
-        font-size: 20px;
-        margin-right: 30px;
-        gap: 45px;
+        font-size: 15px;
+        margin-right: 20px;
+        gap: 35px;
     }
 
     nav ul li:hover{
-        font-size: 20px;
+        font-size: 15px;
         transition: none;
     }    
 
     #logo{
         margin-left: 10px;
-        width: 120px;
+        width: 110px;
     }
 
     #carrossel > .container-banner > .btn-seta{
@@ -718,7 +718,7 @@ nav ul li:hover{
     
 
     #conteudo{
-        padding: 40px;
+        padding: 25px;
     }
 
     #servicos article, #servicos article.invertido{
@@ -726,7 +726,7 @@ nav ul li:hover{
     }
 
     #servicos article img{
-        width: 550px;
+        width: 450px;
     }
 
     #servicos article h2{
@@ -734,8 +734,8 @@ nav ul li:hover{
     }
 
     #servicos > article{
-        font-size: 23px;
-        margin-bottom: 20px;
+        font-size: 13px;
+        margin-bottom: 10px;
         text-align: justify;
     }
 
@@ -747,11 +747,11 @@ nav ul li:hover{
 
     #infos {
         text-align: justify;
-        font-size: 21px;
+        font-size: 11px;
     }
 
     .img-contato{
-        width:60px;
+        width:55px;
     }
 
     #whatsapp-fixo img {
@@ -761,28 +761,32 @@ nav ul li:hover{
     #whatsapp-fixo img:hover {
         transform: none;
     }
+
+    footer {
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width:320px) {
     h1{
-        font-size: 40px;
-        margin-bottom: 40px;  
+        font-size: 28px;
+        margin-bottom: 15px;  
     }
     
     nav ul{
-        font-size: 15px;
-        margin-right: 25px;
-        gap: 40px;
+        font-size: 12px;
+        margin-right: 30px;
+        gap: 25px;
     }
 
     nav ul li:hover{
-        font-size: 15px;
+        font-size: 12px;
         transition: none;
     }    
 
     #logo{
-        margin-left: 10px;
-        width: 115px;
+        margin-left: 15px;
+        width: 90px;
     }
 
     #carrossel > .container-banner > .btn-seta{
@@ -794,13 +798,17 @@ nav ul li:hover{
     }
 
     .dot {
-        width: 9px;
-        height: 9px;
+        width: 13px;
+        height: 13px;
     }
 
     #faixa-contatos{
-        gap: 50px;
-        margin: 17px;
+        gap: 45px;
+        margin: 25px;
+    }
+
+    #faixa-contatos img{
+        width: 90px;
     }
 
     #faixa-contatos p {
@@ -809,7 +817,7 @@ nav ul li:hover{
     
 
     #conteudo{
-        padding: 35px;
+        padding: 24px;
     }
 
     #servicos article, #servicos article.invertido{
@@ -817,7 +825,7 @@ nav ul li:hover{
     }
 
     #servicos article img{
-        width: 445px;
+        width: 300px;
     }
 
     #servicos article h2{
@@ -825,28 +833,28 @@ nav ul li:hover{
     }
 
     #servicos > article{
-        font-size: 18px;
-        margin-bottom: 15px;
+        font-size: 12px;
+        margin-bottom: 9px;
         text-align: justify;
     }
 
     #contato-section{
         justify-content: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 9px;
     }
 
     #infos {
         text-align: justify;
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .img-contato{
-        width:55px;
+        width:50px;
     }
 
     #whatsapp-fixo img {
-        width: 45px;    
+        width: 48px;    
     }
 
     #whatsapp-fixo img:hover {

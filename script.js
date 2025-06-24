@@ -12,11 +12,31 @@ const lista = [
   { img: 3, href: "#infos" } 
 ];
 
+const listaMobile = [
+  { img: 4, href: "#contato" },
+  { img: 5, href: "#servicos" },
+  { img: 6, href: "#infos" }
+];
+
 let botaoVoltar;
 let botaoAvancar;
 let banner;
 let bannerLink;
 let intervalo; 
+let listaAtiva = lista;
+
+function VerificarTamanhoTela() {
+  if (window.innerWidth <= 425) {
+    listaAtiva = listaMobile;
+  } else {
+    listaAtiva = lista; 
+  }
+  Atualizar();
+}
+
+window.addEventListener('resize', VerificarTamanhoTela);
+
+VerificarTamanhoTela();
 
 function Inicio() {
   botaoVoltar = document.getElementById("btnVoltar");
@@ -45,7 +65,7 @@ function Inicio() {
 
 function Avancar() {
   cont++;
-  if (cont >= lista.length) {
+  if (cont >= listaAtiva.length) {
     cont = 0;
   }
   Atualizar();
@@ -55,15 +75,15 @@ function Avancar() {
 function Voltar() {
   cont--;
   if (cont < 0) {
-    cont = lista.length - 1;
+    cont = listaAtiva.length - 1;
   }
   Atualizar();
   ReiniciarCarrossel(); 
 }
 
 function Atualizar() {
-  banner.src = caminho + prefix + lista[cont].img + extensao;
-  bannerLink.href = lista[cont].href;
+  banner.src = caminho + prefix + listaAtiva[cont].img + extensao;
+  bannerLink.href = listaAtiva[cont].href;
   AtualizarIndicadores();
 }
 

@@ -3,6 +3,28 @@
     src: url('font/Poppins-Regular.ttf') format('TrueType'); 
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 *{
     font-family: poppins;
     margin: 0;
@@ -205,6 +227,16 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     gap: 40px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#servicos article:not(.invertido) {
+    animation-name: slideInLeft;
+}
+
+#servicos article.invertido {
+    animation-name: slideInRight;
 }
 
 #servicos article img {
